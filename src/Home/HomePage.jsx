@@ -111,6 +111,7 @@ const HomePage = () => {
         {/* Category Filters */}
         <div>
           <h2 className="text-lg font-semibold mb-4">Category Filters</h2>
+
           <div className="space-y-2">
             {Object.keys(filters).map((filterKey) => (
               <div key={filterKey}>
@@ -136,8 +137,8 @@ const HomePage = () => {
                 {filters[filterKey] && (
                   <div className="ml-4">
                     {filterOptions[filterKey].map((option) => (
-                      <label key={option} className="flex items-center mb-1">
-                        <input type="checkbox" className="mr-2" />
+                      <label key={option} className="flex items-center mb-1  ">
+                        <input type="checkbox" className="mr-2  accent-gray-300 focus:accent-gray-500 " />
                         {option}
                       </label>
                     ))}
