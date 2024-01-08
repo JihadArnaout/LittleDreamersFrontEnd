@@ -1,9 +1,14 @@
 import React, { useState } from "react";
 import logo from "../images/logo.png";
+<<<<<<< HEAD
 import SignUp from "./RegisterUser";
 import Login from "./Login";
 import { Link } from "react-router-dom";
 import { TERipple } from "tw-elements-react";
+=======
+import SignIn from "./RegisterUser";
+import { Link } from "react-router-dom";
+>>>>>>> f47d33857fd80ba8c97e8d47a2779dd538520f0c
 
 function NavBar() {
   const [searchTerm, setSearchTerm] = useState("");
@@ -16,6 +21,7 @@ function NavBar() {
     console.log("Performing search for:", searchTerm);
     // You can perform actions such as fetching data or filtering based on searchTerm
   };
+<<<<<<< HEAD
   
   return (
     <div className="bg-gray-800 py-3 flex items-center justify-between px-8">
@@ -24,6 +30,14 @@ function NavBar() {
       <Link to="/" className="nav-link text-white hover:text-red-500">
         <img src={logo} alt="Logo" className="h-12 w-50" />
         </Link>
+=======
+
+  return (
+    <div className="bg-gray-800 py-3 px-8 flex items-center justify-between">
+      {/* Logo on the left */}
+      <div className="flex items-center">
+        <img src={logo} alt="Logo" className="h-12 w-50" />
+>>>>>>> f47d33857fd80ba8c97e8d47a2779dd538520f0c
       </div>
 
       {/* Navigation Links in the center */}
@@ -31,6 +45,7 @@ function NavBar() {
         <Link to="/" className="nav-link text-white hover:text-red-500">
           HOME
         </Link>
+<<<<<<< HEAD
         <Link to="/" className="nav-link text-white hover:text-red-500">
           BOYS
         </Link>
@@ -40,6 +55,8 @@ function NavBar() {
         <Link to="/faq" className="nav-link text-white hover:text-red-500">
           FAQ
         </Link>
+=======
+>>>>>>> f47d33857fd80ba8c97e8d47a2779dd538520f0c
         <Link
           to="/contact-us"
           className="nav-link text-white hover:text-red-500"
@@ -49,6 +66,12 @@ function NavBar() {
         <Link to="/about-us" className="nav-link text-white hover:text-red-500">
           ABOUT-US
         </Link>
+<<<<<<< HEAD
+=======
+        <Link to="/faq" className="nav-link text-white hover:text-red-500">
+          FAQ
+        </Link>
+>>>>>>> f47d33857fd80ba8c97e8d47a2779dd538520f0c
       </div>
 
       {/* Search bar, Sign In, Register, and Shopping Cart */}
@@ -66,7 +89,10 @@ function NavBar() {
             />
 
             {/* <!--Search button--> */}
+<<<<<<< HEAD
             <TERipple color="light">
+=======
+>>>>>>> f47d33857fd80ba8c97e8d47a2779dd538520f0c
               <button
                 className="relative z-[2] flex items-center rounded-r bg-primary px-6 py-2.5 text-xs font-medium uppercase leading-tight text-white shadow-md transition duration-150 ease-in-out bg-gray-500 hover:bg-primary-700 hover:shadow-lg focus:bg-primary-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-primary-800 active:shadow-lg"
                 type="button"
@@ -86,12 +112,19 @@ function NavBar() {
                   />
                 </svg>
               </button>
+<<<<<<< HEAD
             </TERipple>
           </div>
         </div>
         
         <Link to="/Login" className="nav-link text-white hover:text-red-500">
           LOG IN
+=======
+          </div>
+        </div>
+        <Link to={SignIn} className="nav-link text-white hover:text-red-500">
+          SIGN IN
+>>>>>>> f47d33857fd80ba8c97e8d47a2779dd538520f0c
         </Link>
         <Link to="/register" className="nav-link text-white hover:text-red-500">
           REGISTER

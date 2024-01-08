@@ -12,6 +12,10 @@
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
+<<<<<<< HEAD
+=======
+    "axios": "^1.6.5",
+>>>>>>> f47d33857fd80ba8c97e8d47a2779dd538520f0c
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-jsx": "^1.0.0",

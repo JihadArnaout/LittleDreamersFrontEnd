@@ -31,28 +31,40 @@ const HomePage = () => {
       name: "Product 1",
       imageUrl: aboutUss,
       price: "$20",
+<<<<<<< HEAD
       rating: 4.5,
+=======
+>>>>>>> f47d33857fd80ba8c97e8d47a2779dd538520f0c
     },
     {
       id: 2,
       name: "Product 2",
       imageUrl: aboutUss,
       price: "$25",
+<<<<<<< HEAD
       rating: 4.3,
+=======
+>>>>>>> f47d33857fd80ba8c97e8d47a2779dd538520f0c
     },
     {
       id: 3,
       name: "Product 3",
       imageUrl: aboutUss,
       price: "$15",
+<<<<<<< HEAD
       rating: 4.1,
+=======
+>>>>>>> f47d33857fd80ba8c97e8d47a2779dd538520f0c
     },
     {
       id: 4,
       name: "Product 4",
       imageUrl: aboutUss,
       price: "$30",
+<<<<<<< HEAD
       rating: 3,
+=======
+>>>>>>> f47d33857fd80ba8c97e8d47a2779dd538520f0c
     },
   ];
 
@@ -80,9 +92,15 @@ const HomePage = () => {
   ];
 
   return (
+<<<<<<< HEAD
 <div className="flex bg-gray-100 ">
       {/* Sidebar with selected menu */}
       <div className="w-1/5 bg-gray-300 p-4 h-screen">
+=======
+<div className="flex">
+      {/* Sidebar with selected menu */}
+      <div className="w-1/5 bg-gray-200 p-4 h-screen">
+>>>>>>> f47d33857fd80ba8c97e8d47a2779dd538520f0c
         {/* Selected Menu */}
         <div className="bg-gray-100 p-4 mb-4 flex items-center justify-between">
           <div>
@@ -111,7 +129,10 @@ const HomePage = () => {
         {/* Category Filters */}
         <div>
           <h2 className="text-lg font-semibold mb-4">Category Filters</h2>
+<<<<<<< HEAD
 
+=======
+>>>>>>> f47d33857fd80ba8c97e8d47a2779dd538520f0c
           <div className="space-y-2">
             {Object.keys(filters).map((filterKey) => (
               <div key={filterKey}>
@@ -137,8 +158,13 @@ const HomePage = () => {
                 {filters[filterKey] && (
                   <div className="ml-4">
                     {filterOptions[filterKey].map((option) => (
+<<<<<<< HEAD
                       <label key={option} className="flex items-center mb-1  ">
                         <input type="checkbox" className="mr-2  accent-gray-300 focus:accent-gray-500 " />
+=======
+                      <label key={option} className="flex items-center mb-1">
+                        <input type="checkbox" className="mr-2" />
+>>>>>>> f47d33857fd80ba8c97e8d47a2779dd538520f0c
                         {option}
                       </label>
                     ))}
@@ -150,6 +176,7 @@ const HomePage = () => {
         </div>
       </div>
 
+<<<<<<< HEAD
       <div className="products w-4/5 p-4">
         {/* Recommended for you*/}
         <section >
@@ -218,6 +245,30 @@ const HomePage = () => {
             ))}
           </div>
         </section>
+=======
+      {/* Product Display */}
+      <div className="w-4/5 p-4">
+        <div className="grid grid-cols-4 gap-4">
+          {products.map((product) => (
+            <div key={product.id} className="border p-4 rounded">
+              <div className="relative overflow-hidden">
+                <img
+                  src={product.imageUrl}
+                  alt={product.name}
+                  className="mb-2 transition-transform duration-300 transform hover:scale-110"
+                />
+              </div>
+              <h3 className="font-semibold">{product.name}</h3>
+              <p className="text-gray-600">{product.price}</p>
+              <Link to={`/product/${product.id}`}>
+                <button className="bg-blue-500 text-white py-1 px-2 rounded mt-2">
+                  Show Details
+                </button>
+              </Link>
+            </div>
+          ))}
+        </div>
+>>>>>>> f47d33857fd80ba8c97e8d47a2779dd538520f0c
       </div>
     </div>
   );
